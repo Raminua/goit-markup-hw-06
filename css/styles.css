@@ -241,7 +241,7 @@ header .container {
     padding: 10px 32px;
     border: 0;
     cursor: pointer;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color var(--transition);
 
 }
 
@@ -259,7 +259,7 @@ header .container {
     background-color: rgba(0, 0, 0, 0.2);
     width: 100%;
     height: 100%;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity var(--transition);
     z-index: 2;
 
 }
@@ -366,7 +366,7 @@ header .container {
     outline: none;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color var(--transition);
 }
 
 .icon-modal {
@@ -376,7 +376,7 @@ header .container {
     transform: translateY(-50%);
     fill: var(--secondory-color);
     display: inline-block;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill var(--transition);
 }
 
 .modal-label {
@@ -408,7 +408,7 @@ header .container {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.01em;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color var(--transition);
 }
 
 .comment:focus {
@@ -438,14 +438,15 @@ header .container {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+
 .icon-modal-checkbox {
     display: block;
     content: '';
     margin-right: 7px;
     border: 1.78px solid #2a2a2a;
     border-radius: 1.78px;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color var(--transition),
+        background-color var(--transition);
 }
 
 .checkbox:hover+.icon-modal-checkbox {
@@ -492,7 +493,8 @@ header .container {
     border: 0;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color var(--transition);
+    cursor: pointer;
 }
 
 .modal-button-submit:hover,
