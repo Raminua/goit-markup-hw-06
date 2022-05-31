@@ -300,6 +300,11 @@ header .container {
 
 }
 
+.modal-button:hover {
+    fill: var(--accent-color);
+    cursor: pointer;
+}
+
 .modal-close-icon {
     margin: 0;
     padding: 0;
