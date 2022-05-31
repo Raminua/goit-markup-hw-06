@@ -454,7 +454,7 @@ header .container {
         background-color var(--transition);
 }
 
-.checkbox:hover+.icon-modal-checkbox {
+.checkbox:focus+.icon-modal-checkbox {
     border-color: var(--accent-color);
 }
 
